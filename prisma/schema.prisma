@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/////////////// Inquirity
+model Inquiry {
+  id String @id @default(uuid())
+  name String
+  nif String
+  phone String
+  email String @unique
+  coberturaMedica String
+  benefits Benefits
+  hospital Hospital
+  insurance Insurance
+  doctor Doctor
+  condition Condition
+  treatment Treatment
+  networkOf NetworkOfSpecialistHospitals
+}
+
+enum Benefits {
+  MedicalConsultations
+  Exams
+  Hospitalization
+}
+
+enum Hospital {  
+  Yes
+  No
+}
+
+enum Doctor { 
+  Yes
+  No
+}
+
+enum Treatment { 
+  Yes
+  No
+}
+
+enum Insurance { 
+  Monthly
+  Quarterly
+  Annually
+}
+
+enum NetworkOfSpecialistHospitals {
+  Yes
+  No
+}
+
+enum Condition {
+  Yes
+  No
+}
+
+/////////////// Support
+model Support {
+  id String @id @default(uuid())
+  name String
+  email String @unique
+  phone String
+  message String
+}
+
+/////////////// Academy
+model Academy {
+  id String @id @default(uuid())
+  fullName String
+  phone String
+  email String @unique
+  bornDate DateTime
+}
