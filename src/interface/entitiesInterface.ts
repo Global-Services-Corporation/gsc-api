@@ -28,3 +28,16 @@ export type Academy = {
     email: string,
     bornDate: Date
 }
+
+export interface Contact {
+    name: string,
+    email: string
+    phone: string
+    message: string
+}
+export interface Adesion {
+    name: string
+    email: string
+    phone: string
+    nif: string
+}
