@@ -1,4 +1,4 @@
-import { InsuranceDatabaseRepository } from '../../repository/InsuranceRepository';
+import { InsuranceDatabaseRepository } from '../../repositories/insuranceIquiry/InsuranceRepository';
 
 export class GetAllIquirityUserUseCase {
     constructor( private insuranceRepository: InsuranceDatabaseRepository){}

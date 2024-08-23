@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import { InDatabaseSupport } from '../../../../entity/supportDatabase/SupportInDataBase';
-import { ZodError } from '../../../../error/globalError';
-import { DeleteSupportUseCase } from './deleteSupportUseCase';
+import { InDatabaseSupport } from '../../entity/supportDatabase/SupportInDataBase';
+import { ZodError } from '../../error/globalError';
+import { DeleteSupportUseCase } from '../../service/support/deleteSupportUseCase';
 
 export async function deleteSupportController(request: FastifyRequest, reply: FastifyReply) {
     

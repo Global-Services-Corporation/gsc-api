@@ -1,7 +1,7 @@
 import { Benefits, Condition, Doctor, Hospital, Insurance, NetworkOfSpecialistHospitals, Treatment } from "@prisma/client";
 import { BadRequest, EmailNull, NullInformation } from '../../error/globalError';
 import { dbConection } from '../databaseConnector/conection';
-import { InsuranceDatabaseRepository } from '../InsuranceRepository';
+import { InsuranceDatabaseRepository } from '../../repositories/insuranceIquiry/InsuranceRepository';
 
 export class IsuranceDatabase implements InsuranceDatabaseRepository {
     

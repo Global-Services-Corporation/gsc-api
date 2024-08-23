@@ -1,7 +1,7 @@
 import { Academy } from "@prisma/client";
-import { dbConection } from "../../../../entity/databaseConnector/conection";
-import { BadRequest, EmailNull, NullInformation } from "../../../../error/globalError";
-import { AcademyRepository } from "../../../../repositories/academy/AcademyRepository";
+import { dbConection } from "../../entity/databaseConnector/conection";
+import { BadRequest, EmailNull, NullInformation } from "../../error/globalError";
+import { AcademyRepository } from "../../repositories/academy/AcademyRepository";
 
 export class InDataBaseAcademyRepository implements AcademyRepository {
     

@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import { IsuranceDatabase } from '../../../../entity/insuranceDatabase/InsuranceDataBase';
-import { ZodError } from '../../../../error/globalError';
-import { CreateInsuranceUseCase } from './createInsureanceUseCase';
+import { IsuranceDatabase } from '../../entity/insuranceDatabase/InsuranceDataBase';
+import { ZodError } from '../../error/globalError';
+import { CreateInsuranceUseCase } from '../../service/insurance/createInsureanceUseCase';
 
 export async function createInsuranceController(request: FastifyRequest, reply: FastifyReply) {
     

@@ -1,5 +1,5 @@
-import { Support } from '../../../../interface/entitiesInterface';
-import { SupportDatabaseRepository } from '../../../../repositories/support/SupportRepository';
+import { Support } from '../../interface/entitiesInterface';
+import { SupportDatabaseRepository } from '../../repositories/support/SupportRepository';
 
 export class CreateSupportUseCase {
     constructor( private supportRepository: SupportDatabaseRepository){}

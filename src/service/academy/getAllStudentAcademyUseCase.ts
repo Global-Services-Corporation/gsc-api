@@ -1,4 +1,4 @@
-import { AcademyRepository } from "../../../../repositories/academy/AcademyRepository";
+import { AcademyRepository } from "../../repositories/academy/AcademyRepository";
 
 export class GetAllStudentAcademyUseCase {
     constructor( private academyRepository: AcademyRepository ){}

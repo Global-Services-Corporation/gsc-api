@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import { InDatabaseSupport } from '../../../../entity/supportDatabase/SupportInDataBase';
-import { ZodError } from '../../../../error/globalError';
-import { GetSupportByEmailUseCase } from './getByEmailUseCase';
+import { InDatabaseSupport } from '../../entity/supportDatabase/SupportInDataBase';
+import { ZodError } from '../../error/globalError';
+import { GetSupportByEmailUseCase } from '../../service/support/getByEmailUseCase';
 
 export async function getSupportByEmailController(request: FastifyRequest, reply: FastifyReply) {
 

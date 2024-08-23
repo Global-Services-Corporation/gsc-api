@@ -1,6 +1,6 @@
-import { InsuranceDatabaseRepository } from '../../repository/InsuranceRepository';
-import { InsuranceType } from '../../../../interface/entitiesInterface';
-import { EmailExist } from '../../../../error/globalError';
+import { InsuranceDatabaseRepository } from '../../repositories/insuranceIquiry/InsuranceRepository';
+import { InsuranceType } from '../../interface/entitiesInterface';
+import { EmailExist } from '../../error/globalError';
 export class CreateInsuranceUseCase {
     constructor( private insuranceRepository: InsuranceDatabaseRepository){}
 

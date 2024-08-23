@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import { IsuranceDatabase } from '../../../../entity/insuranceDatabase/InsuranceDataBase';
-import { ZodError } from '../../../../error/globalError';
-import { GetIquirityUserByIdUseCase } from './getUsersByidUseCase';
+import { IsuranceDatabase } from '../../entity/insuranceDatabase/InsuranceDataBase';
+import { ZodError } from '../../error/globalError';
+import { GetIquirityUserByIdUseCase } from '../../service/insurance/getUsersByidUseCase';
 
 export async function getquirityUserByIdController(request: FastifyRequest, reply: FastifyReply) {
 

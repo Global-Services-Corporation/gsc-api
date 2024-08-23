@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 import { ZodError } from '../../error/globalError';
-import { InDataBaseAcademyRepository } from "../../repository/implementations/InDataBaseAcademyRepository";
-import { GetStudentAcademyEmailUseCase } from "../../service/academy/useCase/getByStudentEmail/getStudentAcademyByEmailUseCase";
+import { InDataBaseAcademyRepository } from "../../entity/academyDatabase/InDataBaseAcademyRepository";
+import { GetStudentAcademyEmailUseCase } from "../../service/academy/getStudentAcademyByEmailUseCase";
 
 export async function getStudentAcademyByEmail(request: FastifyRequest, reply: FastifyReply) {
     const schemaBody = z.object({

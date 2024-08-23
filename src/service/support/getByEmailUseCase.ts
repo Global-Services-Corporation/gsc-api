@@ -1,4 +1,4 @@
-import { SupportDatabaseRepository } from '../../../../repositories/support/SupportRepository';
+import { SupportDatabaseRepository } from '../../repositories/support/SupportRepository';
 
 export class GetSupportByEmailUseCase {
     constructor( private supportRepository: SupportDatabaseRepository){}

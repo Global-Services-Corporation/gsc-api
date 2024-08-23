@@ -1,6 +1,6 @@
 import { Academy } from "@prisma/client";
-import { NullInformation } from "../../../../error/globalError";
-import { AcademyRepository } from "../../../../repositories/academy/AcademyRepository";
+import { NullInformation } from "../../error/globalError";
+import { AcademyRepository } from "../../repositories/academy/AcademyRepository";
 
 export class GetStudentAcademyByIdUseCase {
     constructor( private academyRepository: AcademyRepository ){}

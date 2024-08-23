@@ -1,5 +1,5 @@
-import { Academy } from "../../../../interface/entitiesInterface";
-import { AcademyRepository } from "../../../../repositories/academy/AcademyRepository";
+import { Academy } from "../../interface/entitiesInterface";
+import { AcademyRepository } from "../../repositories/academy/AcademyRepository";
 
 export class InsertStudentAcademyUseCase {
     constructor( private academyRepository: AcademyRepository ){}

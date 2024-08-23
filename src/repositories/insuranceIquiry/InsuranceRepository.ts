@@ -1,5 +1,5 @@
 import { Hospital, Insurance, Doctor, Condition, Inquiry, Benefits, Treatment, NetworkOfSpecialistHospitals } from "@prisma/client";
-import { BadRequest, NullInformation, EmailNull} from '../../../error/globalError';
+import { BadRequest, NullInformation, EmailNull} from '../../error/globalError';
 
 export interface InsuranceDatabaseRepository {
     save( 

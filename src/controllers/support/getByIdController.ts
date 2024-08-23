@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import { InDatabaseSupport } from '../../../../entity/supportDatabase/SupportInDataBase';
-import { ZodError } from '../../../../error/globalError';
-import { GetByIdUseCase } from './getByidUseCase';
+import { InDatabaseSupport } from '../../entity/supportDatabase/SupportInDataBase';
+import { ZodError } from '../../error/globalError';
+import { GetByIdUseCase } from '../../service/support/getByidUseCase';
 
 export async function getByIdController(request: FastifyRequest, reply: FastifyReply) {
 

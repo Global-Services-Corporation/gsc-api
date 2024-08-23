@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import { IsuranceDatabase } from '../../../../entity/insuranceDatabase/InsuranceDataBase';
-import { ZodError } from '../../../../error/globalError';
-import { DeleteIquirityUseCase } from './deleteIquirityUseCase';
+import { IsuranceDatabase } from '../../entity/insuranceDatabase/InsuranceDataBase';
+import { ZodError } from '../../error/globalError';
+import { DeleteIquirityUseCase } from '../../service/insurance/deleteIquirityUseCase';
 
 export async function deletequirityController(request: FastifyRequest, reply: FastifyReply) {
 

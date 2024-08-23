@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 import { ZodError } from '../../error/globalError';
-import { InDataBaseAcademyRepository } from "../../repository/implementations/InDataBaseAcademyRepository";
-import { InsertStudentAcademyUseCase } from "../../service/academy/useCase/InsertStudentAcademy/insertStudentAcademyUseCase";
+import { InDataBaseAcademyRepository } from "../../entity/academyDatabase/InDataBaseAcademyRepository";
+import { InsertStudentAcademyUseCase } from "../../service/academy/insertStudentAcademyUseCase";
 
 export async function insertStudentAcademy(request: FastifyRequest, reply: FastifyReply) {
 
