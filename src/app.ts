@@ -20,7 +20,7 @@ export const app = Fastify();
 
 app.register(cors, { 
     origin: '*',
-    methods:['GET', 'POST', 'DELETE', 'PUT'],
+    methods:['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
 });
 
 app.register(InsertInquirity);

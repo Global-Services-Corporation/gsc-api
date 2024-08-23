@@ -10,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+////////////////////////////////////////// site principal ////////////////////////////////////////////////////
 /////////////// Inquirity
 model Inquiry {
   id String @id @default(uuid())
@@ -80,4 +81,23 @@ model Academy {
   phone String
   email String @unique
   bornDate DateTime
+}
+
+//////////////////////////////Leadership Innovation ////////////////////////////////////////
+///Contact
+
+model Contact {
+  id Int @id @default(autoincrement())
+  name String
+  email String
+  phone String
+  message String
+}
+
+model Adesion {
+  id Int @id @default(autoincrement())
+  name String
+  email String
+  phone String
+  nif String
 }
