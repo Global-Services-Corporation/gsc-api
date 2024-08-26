@@ -31,4 +31,4 @@ jobs:
         env:
           NODE_ENV: dev
           PORT: 3000
-          DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
+          DATABASE_URL: "postgresql://gscdb_user:WbmgnKQ9muAoTIYs3bB0RpaZwqxXdLXt@dpg-cr6819jtq21c73bb09c0-a/gscdb"
