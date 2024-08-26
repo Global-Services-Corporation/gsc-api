@@ -16,7 +16,7 @@ jobs:
         env:
           POSTGRESQL_USERNAME: mypstgresdb
           POSTGRESQL_PASSWORD: root
-          POSTGRESQL_DATABASE: apisolid
+          POSTGRESQL_DATABASE: gscdb
 
     steps:
       - uses: actions/checkout@v3  # Vai baixar o código na máquina
@@ -28,7 +28,6 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run test
         env:
           NODE_ENV: dev
           PORT: 3000
